@@ -40,3 +40,25 @@ form.addEventListener('submit', function(e){
         }
     }
 });
+
+if(email != undefined) {
+    email.addEventListener("keyup", function(e){
+        console.log(this.value);
+        let str_reg = /^[a-z]+@[a-z]+\.[a-z]+$/;
+        if(this.value.match(str_reg) == null) {
+            this.nextElementSibling.textContent = "Invalid Email";
+        } else {
+            this.nextElementSibling.textContent = "";
+        }
+    });
+}
+
+if(cpwd != undefined) {
+    cpwd.addEventListener("keyup", function(e){
+        if(this.value != pwd.value){
+            this.nextElementSibling.textContent = "Password doesn't match"
+        } else {
+            this.nextElementSibling.textContent = "";
+        }
+    });
+}
