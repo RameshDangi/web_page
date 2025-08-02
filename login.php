@@ -1,4 +1,31 @@
-<?php include './header.php'; ?>
+<?php session_start();
+if(isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $pwd = $_POST['pwd'];
+
+    include './connection.php';
+    sql = "SELECT id, email, password FROM users WHERE email = '$email'";
+    $res = mysqli_query($conn, $sql);
+    if($res -> num_rows > 0) {
+        while($data = mysqli_fetch_assoc($res)){
+            $hashedpwd = sha1($pwd);
+            if($data['password'] == $hashedpwd) {
+                $_SESSION['login_status'] = true;
+                $_SESSION['msg'] = "Login Successful";
+                header("location: ./home.php");
+            } else {
+                $_SESSION['msg'] = "Password not matched";
+                header("location: ./login.php");
+            }
+        }
+    } else {
+        $_SESSION['msg'] = "Login Failed:";
+        header("location: ./login.php");
+    }
+}
+
+
+include './header.php'; ?>
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
@@ -16,4 +43,5 @@
                 <p>Don't have an account? <a href="./sign_up.html">Sign Up</a></p>
             </div>
         </div>
-<?php include './footer.php'; ?>
+<?php include './footer.php';
+$_SESSION['msg'] = ' '; ?>
