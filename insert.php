@@ -1,5 +1,5 @@
 <?php session_start();
-if isset($_POST['submit']) {
+if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $addr = $_POST['addr'];
     $pwd = $_POST['pwd'];
