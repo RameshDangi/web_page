@@ -1,4 +1,5 @@
 <?php include './header.php'; ?>
+    <form action="#" name="log_form">
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
@@ -24,4 +25,5 @@
                 <p>Don't have an account? <a href="./login.html">Login</a></p>
             </div>
         </div>
+    </form>
 <?php include './footer.php'; ?>
