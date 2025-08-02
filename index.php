@@ -40,7 +40,7 @@ include './header.php'; ?>
                     <label for="pwd">Password</label>
                     <input type="password" name="pwd" id="pwd" placeholder="Enter your password" value="">
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" name = "submit">Login</button>
                 <p>Don't have an account? <a href="./sign_up.php">Sign Up</a></p>
             </div>
         </div>
