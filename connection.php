@@ -2,7 +2,7 @@
 $host = "127.0.0.1";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "";
+$dbname = "ecom_pro";
 
 $conn = mysqli_connect($host, $dbuser, $dbpass, k$dbname);
 
