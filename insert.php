@@ -22,4 +22,4 @@ if (isset($_POST['submit'])) {
         header("location: ./sign_up.php");
     } 
 }
-header("locatoin: ./list.php");
+header("location: ./list.php");
