@@ -24,7 +24,4 @@
                 <p>Don't have an account? <a href="./login.html">Login</a></p>
             </div>
         </div>
-    </form>
-    <script src="./public/script.js"></script>
-</body>
-</html>
+<?php include './footer.php'; ?>
