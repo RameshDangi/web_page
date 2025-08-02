@@ -16,7 +16,4 @@
                 <p>Don't have an account? <a href="./sign_up.html">Sign Up</a></p>
             </div>
         </div>
-    </form>
-    <script src="./public/script.js"></script>
-</body>
-</html>
+<?php include './footer.php'; ?>
