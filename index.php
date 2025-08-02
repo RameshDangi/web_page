@@ -26,6 +26,7 @@ if(isset($_POST['submit'])) {
 
 
 include './header.php'; ?>
+    <form action="#" name="log_form">
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
@@ -43,5 +44,6 @@ include './header.php'; ?>
                 <p>Don't have an account? <a href="./sign_up.html">Sign Up</a></p>
             </div>
         </div>
+    </form>
 <?php include './footer.php';
 $_SESSION['msg'] = ' '; ?>
