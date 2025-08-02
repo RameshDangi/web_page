@@ -21,7 +21,7 @@
                     <label for="cpwd">Conform Password</label>
                     <input type="password" name="cpwd" id="cpwd" placeholder="Rewrite password" value="">
                 </div>
-                <button type="submit">Sign In</button>
+                <button type="submit" name = "submit">Sign In</button>
                 <p>Don't have an account? <a href="./index.php">Login</a></p>
             </div>
         </div>
