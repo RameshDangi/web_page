@@ -15,12 +15,12 @@ if(isset($_POST['submit'])) {
                 header("location: ./home.php");
             } else {
                 $_SESSION['msg'] = "Password not matched";
-                header("location: ./login.php");
+                header("location: ./index.php");
             }
         }
     } else {
         $_SESSION['msg'] = "Login Failed:";
-        header("location: ./login.php");
+        header("location: ./index.php");
     }
 }
 
