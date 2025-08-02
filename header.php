@@ -7,4 +7,4 @@
     <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
-    <form action="#" name="log_form">
+    
