@@ -4,6 +4,6 @@ $dbuser = "root";
 $dbpass = "";
 $dbname = "ecom_pro";
 
-$conn = mysqli_connect($host, $dbuser, $dbpass, k$dbname);
+$conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
 
 if(!$conn) die("Connection failed: " . mysqli_connect_error());
