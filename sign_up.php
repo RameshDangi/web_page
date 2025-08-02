@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
-    <form action="#" name="log_form">
+    <form action="./insert.php" name="log_form">
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
