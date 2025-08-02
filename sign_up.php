@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="./public/style.css">
-</head>
-<body>
-    <form action="./insert.php" name="log_form">
+<?php include './header.php'; ?>
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
