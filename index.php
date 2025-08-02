@@ -4,7 +4,7 @@ if(isset($_POST['submit'])) {
     $pwd = $_POST['pwd'];
 
     include './connection.php';
-    sql = "SELECT id, email, password FROM users WHERE email = '$email'";
+    $sql = "SELECT id, email, password FROM users WHERE email = '$email'";
     $res = mysqli_query($conn, $sql);
     if($res -> num_rows > 0) {
         while($data = mysqli_fetch_assoc($res)){
