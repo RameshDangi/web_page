@@ -22,7 +22,7 @@
                     <input type="password" name="cpwd" id="cpwd" placeholder="Rewrite password" value="">
                 </div>
                 <button type="submit">Sign In</button>
-                <p>Don't have an account? <a href="./login.html">Login</a></p>
+                <p>Don't have an account? <a href="./index.php">Login</a></p>
             </div>
         </div>
     </form>
