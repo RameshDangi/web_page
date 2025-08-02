@@ -26,7 +26,7 @@ if(isset($_POST['submit'])) {
 
 
 include './header.php'; ?>
-    <form action="#" name="log_form">
+    <form action="#" method = "POST" name="log_form">
         <div class="login_page">
             <h1>CCTV STORE</h1>
             <hr>
