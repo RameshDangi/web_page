@@ -41,7 +41,7 @@ include './header.php'; ?>
                     <input type="password" name="pwd" id="pwd" placeholder="Enter your password" value="">
                 </div>
                 <button type="submit">Login</button>
-                <p>Don't have an account? <a href="./sign_up.html">Sign Up</a></p>
+                <p>Don't have an account? <a href="./sign_up.php">Sign Up</a></p>
             </div>
         </div>
     </form>
