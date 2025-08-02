@@ -34,7 +34,7 @@ form.addEventListener('submit', function(e){
     if(cpwd != undefined) {
         if(cpwd.value.length === 0) {
             e.preventDefault();
-            cpwd.nextElementSibling.textContent = "Conform Password mus require";
+            cpwd.nextElementSibling.textContent = "Conform Password must require";
         } else {
             cpwd.nextElementSibling.innerText = "";
         }
